@@ -44,7 +44,7 @@ h2::after {
     content: "✨"; /* Icono de estrella después del h2 */
     margin-left: 10px;
 }
-/* Contenedor general para los videos */
+/* Estilos para el contenedor de los videos */
 .video-container {
     display: flex;
     justify-content: space-between; /* Espacio entre los videos */
@@ -58,15 +58,15 @@ h2::after {
 .video-item {
     position: relative;
     width: 100%;
-    max-width: 48%; /* Ancho máximo para que los videos ocupen el 48% del contenedor */
-    padding-top: 28.25%; /* Esto mantiene la proporción de 16:9 */
-    background-color: #000; /* Fondo negro para los videos */
+    max-width: 48%; /* Los videos ocuparán un máximo de 48% del contenedor */
+    padding-top: 28.25%; /* Proporción 16:9 */
+    background-color: #000; /* Fondo negro */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra ligera */
-    overflow: hidden; /* Asegura que el video se ajuste dentro de los bordes */
+    overflow: hidden; /* Asegura que el video no se desborde */
 }
 
-/* Hacer el iframe responsivo */
+/* Hacer que los iframes se ajusten al tamaño del contenedor */
 .video-item iframe {
     position: absolute;
     top: 0;
@@ -76,19 +76,18 @@ h2::after {
     border: none; /* Elimina el borde del iframe */
 }
 
-/* Responsividad para pantallas más pequeñas */
+/* Estilo para pantallas pequeñas */
 @media (max-width: 768px) {
     .video-container {
-        flex-direction: column; /* Los videos se apilarán uno encima del otro */
+        flex-direction: column; /* Los videos se apilarán verticalmente */
         align-items: center; /* Centra los videos */
     }
 
     .video-item {
-        max-width: 90%; /* Los videos ocuparán el 90% del contenedor en pantallas pequeñas */
+        max-width: 90%; /* Los videos ocuparán el 90% del contenedor */
         margin-bottom: 20px; /* Espacio entre los videos */
     }
 }
-
 
     </style>
    
